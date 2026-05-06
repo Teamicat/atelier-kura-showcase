@@ -84,6 +84,28 @@
   color: var(--accent-deep);
   font-weight: 600;
   font-family: var(--font-sans);
+  margin-bottom: 1rem;
+}
+
+.btn-buy {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--accent-soft);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-buy:hover {
+  background-color: var(--accent-deep);
+  transform: translateY(-2px);
+}
+
+.btn-buy:active {
+  transform: translateY(0);
 }
 
 @media (max-width: 480px) {

@@ -68,6 +68,15 @@ const Gallery = ({ onProductClick }: GalleryProps) => {
             <div className="product-info">
               <h3 className="product-name">{product.name}</h3>
               <p className="product-price">{product.price}</p>
+              <button 
+                className="btn-buy"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  alert(`Ajouté au panier : ${product.name}`);
+                }}
+              >
+                Acheter
+              </button>
             </div>
           </div>
         ))}
