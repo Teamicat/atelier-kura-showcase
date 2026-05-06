@@ -4,7 +4,8 @@ import Gallery from './components/Gallery/Gallery';
 import Modal from './components/Modal/Modal';
 import Contact from './components/Contact/Contact';
 import Social from './components/Social/Social';
-import type { Product } from './data';
+import Reviews from './components/Reviews/Reviews'; /* Importer le nouveau composant */
+import { Product } from './data';
 import './index.css';
 
 function App() {
@@ -24,10 +25,11 @@ function App() {
     <div className="app">
       <nav className="main-nav">
         <div className="nav-container">
-          <div className="logo">STUDIO</div>
+          <div className="logo">Atelier Kura</div>
           <div className="nav-links">
             <a href="#home">Histoire</a>
             <a href="#gallery">Collection</a>
+            <a href="#reviews">Avis Clients</a> {/* Lien vers la nouvelle section */}
             <a href="#contact">Contact</a>
           </div>
         </div>
@@ -36,6 +38,7 @@ function App() {
       <main style={{ paddingTop: '80px' }}>
         <Hero />
         <Gallery onProductClick={openModal} />
+        <Reviews /> {/* Intégration du composant Avis Clients */}
         <Contact />
         <Social />
       </main>
