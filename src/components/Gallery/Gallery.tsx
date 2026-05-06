@@ -33,6 +33,22 @@ const products: Product[] = [
     price: "60€",
     image: "https://images.unsplash.com/photo-1593611664162-f79aa73a14d3?q=80&w=800&auto=format&fit=crop",
     details: "Un support minimaliste qui maintient vos couteaux en sécurité et à portée de main."
+  },
+  {
+    id: 5,
+    name: "Théière Kyusu Japonaise",
+    description: "L'élégance du thé à la japonaise.",
+    price: "75€",
+    image: "https://images.unsplash.com/photo-1613708333744-86c638165662?q=80&w=800&auto=format&fit=crop",
+    details: "Une théière traditionnelle japonaise (Kyusu) en céramique, au design épuré pour une dégustation authentique."
+  },
+  {
+    id: 6,
+    name: "Set de Baguettes Bambou",
+    description: "L'art de la table minimaliste.",
+    price: "20€",
+    image: "https://images.unsplash.com/photo-1607199426152-2b8479d2106e?q=80&w=800&auto=format&fit=crop",
+    details: "Un set de 2 paires de baguettes en bambou naturel, léger et durable, pour une expérience culinaire authentique."
   }
 ];
 
