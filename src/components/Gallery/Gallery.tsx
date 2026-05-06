@@ -7,24 +7,24 @@ const products: Product[] = [
     name: "Cocotte en Fonte",
     description: "L'art de la cuisson lente et homogène.",
     price: "180€",
-    image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800&auto=format&fit=crop",
-    details: "Une cocotte en fonte émaillée robuste, idéale pour les ragoûts et les cuissons longues. Son design intemporel passe directement de la cuisine à la table."
+    image: "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?q=80&w=800&auto=format&fit=crop",
+    details: "Une cocotte en fonte émaillée robuste, idéale pour les ragoûts et les cuissons longues."
   },
   {
     id: 2,
     name: "Spatule en Bois",
     description: "Douceur et précision pour vos poêles.",
     price: "15€",
-    image: "https://images.unsplash.com/photo-1594793012214-e5788d929497?q=80&w=800&auto=format&fit=crop",
-    details: "Fabriquée artisanalement en bois de hêtre, cette spatule respecte les surfaces antiadhésives tout en offrant une prise en main chaleureuse."
+    image: "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=800&auto=format&fit=crop",
+    details: "Fabriquée artisanalement en bois de hêtre, cette spatule respecte les surfaces antiadhésives."
   },
   {
     id: 3,
-    name: "Planche à Découper en Bois",
+    name: "Planche à Découper",
     description: "Un billot naturel et résistant.",
     price: "45€",
     image: "https://images.unsplash.com/photo-1594794112450-b50a2569ef5c?q=80&w=800&auto=format&fit=crop",
-    details: "Une planche épaisse en bois de chêne, traitée aux huiles naturelles. Sa surface auto-cicatrisante protège le tranchant de vos couteaux."
+    details: "Une planche épaisse en bois de chêne, traitée aux huiles naturelles."
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const products: Product[] = [
     description: "L'élégance de l'acier pour vos lames.",
     price: "60€",
     image: "https://images.unsplash.com/photo-1593611664162-f79aa73a14d3?q=80&w=800&auto=format&fit=crop",
-    details: "Un support minimaliste qui maintient vos couteaux en sécurité et à portée de main. Un gain de place esthétique pour toute cuisine moderne."
+    details: "Un support minimaliste qui maintient vos couteaux en sécurité et à portée de main."
   }
 ];
 
