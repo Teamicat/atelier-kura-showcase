@@ -23,7 +23,7 @@ const products: Product[] = [
     name: "Planche à Découper",
     description: "Un billot naturel et résistant.",
     price: "45€",
-    image: "https://images.unsplash.com/photo-1594794112450-b50a2569ef5c?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1597656593731-145d30578648?q=80&w=800&auto=format&fit=crop",
     details: "Une planche épaisse en bois de chêne, traitée aux huiles naturelles."
   },
   {
