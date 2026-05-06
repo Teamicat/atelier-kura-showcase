@@ -7,7 +7,7 @@ const products: Product[] = [
     name: "Cocotte en Fonte",
     description: "L'art de la cuisson lente et homogène.",
     price: "180€",
-    image: "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800&auto=format&fit=crop",
     details: "Une cocotte en fonte émaillée robuste, idéale pour les ragoûts et les cuissons longues. Son design intemporel passe directement de la cuisine à la table."
   },
   {
@@ -15,7 +15,7 @@ const products: Product[] = [
     name: "Spatule en Bois",
     description: "Douceur et précision pour vos poêles.",
     price: "15€",
-    image: "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1594793012214-e5788d929497?q=80&w=800&auto=format&fit=crop",
     details: "Fabriquée artisanalement en bois de hêtre, cette spatule respecte les surfaces antiadhésives tout en offrant une prise en main chaleureuse."
   },
   {
@@ -31,7 +31,7 @@ const products: Product[] = [
     name: "Porte-Couteaux Design",
     description: "L'élégance de l'acier pour vos lames.",
     price: "60€",
-    image: "https://images.unsplash.com/photo-1593611664162-ef9f6111f196?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1593611664162-f79aa73a14d3?q=80&w=800&auto=format&fit=crop",
     details: "Un support minimaliste qui maintient vos couteaux en sécurité et à portée de main. Un gain de place esthétique pour toute cuisine moderne."
   }
 ];
@@ -56,8 +56,9 @@ const Gallery = ({ onProductClick }: GalleryProps) => {
                 src={product.image} 
                 alt={product.name} 
                 className="product-image"
+                loading="lazy"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = "https://via.placeholder.com/800x800?text=Image+Chargement...";
+                  (e.target as HTMLImageElement).src = `https://placehold.co/800x800/f7f9f7/2d3436?text=${encodeURIComponent(product.name)}`;
                 }}
               />
               <div className="product-overlay">
