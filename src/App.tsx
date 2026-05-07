@@ -4,7 +4,8 @@ import Gallery from './components/Gallery/Gallery';
 import Modal from './components/Modal/Modal';
 import Contact from './components/Contact/Contact';
 import Social from './components/Social/Social';
-import Reviews from './components/Reviews/Reviews'; /* Importer le nouveau composant */
+import Reviews from './components/Reviews/Reviews';
+import Countdown from './components/Countdown/Countdown';
 import type { Product } from './data';
 import './index.css';
 
@@ -23,19 +24,20 @@ function App() {
 
   return (
     <div className="app">
-      <nav className="main-nav">
+      <Countdown />
+      <nav className="main-nav" style={{ top: '40px' }}>
         <div className="nav-container">
           <div className="logo">Yamasaki</div>
           <div className="nav-links">
             <a href="#home">Histoire</a>
             <a href="#gallery">Collection</a>
-            <a href="#reviews">Avis Clients</a> {/* Lien vers la nouvelle section */}
+            <a href="#reviews">Avis Clients</a>
             <a href="#contact">Contact</a>
           </div>
         </div>
       </nav>
 
-      <main style={{ paddingTop: '100px' }}>
+      <main style={{ paddingTop: '140px' }}>
         <Hero />
         <Gallery onProductClick={openModal} />
         <Reviews />
