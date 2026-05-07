@@ -2,54 +2,63 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 80vh;
-  gap: var(--spacing-md);
+  min-height: 85vh;
+  gap: var(--spacing-lg);
 }
 
 .hero-content {
-  flex: 1;
-  max-width: 600px;
+  flex: 1.2;
+  max-width: 650px;
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 4.5rem;
   line-height: 1.1;
   margin-bottom: var(--spacing-md);
-  color: var(--accent-deep);
+  color: var(--color-text);
+  letter-spacing: -1px;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
-  color: var(--text-muted);
+  font-size: 1.2rem;
+  color: var(--color-text);
+  opacity: 0.8;
   margin-bottom: var(--spacing-md);
-  max-width: 500px;
+  max-width: 520px;
+  font-weight: 300;
 }
 
 .btn-primary {
   display: inline-block;
-  padding: 1rem 2.5rem;
-  background-color: var(--accent-soft);
-  color: var(--white);
-  border-radius: 50px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  box-shadow: 0 4px 15px rgba(155, 172, 154, 0.3);
+  padding: 1.1rem 2.8rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 2px; /* 更方正的簡約感 */
+  font-weight: 500;
+  letter-spacing: 1px;
+  box-shadow: 0 10px 20px rgba(181, 192, 208, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background-color: #A4B2C4;
 }
 
 .hero-visual {
-  flex: 1;
+  flex: 0.8;
   display: flex;
   justify-content: flex-end;
   position: relative;
 }
 
 .visual-circle {
-  width: 400px;
-  height: 400px;
-  background: linear-gradient(135deg, var(--accent-soft), var(--accent-earth));
+  width: 450px;
+  height: 450px;
+  background: linear-gradient(135deg, var(--color-primary), #D1D8E0);
   border-radius: 50% 50% 30% 70% / 60% 40% 60% 40%;
   animation: morph 8s ease-in-out infinite;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 @keyframes morph {

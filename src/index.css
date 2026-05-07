@@ -1,22 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap');
 
 :root {
-  /* Palette Morandi - Soft & Muted */
-  --bg-color: #f7f9f7;
-  --text-main: #2d3436;
-  --text-muted: #636e72;
-  --accent-soft: #9bac9a; /* Vert Morandi signature */
-  --accent-earth: #b2a496; /* Terre Morandi */
-  --accent-deep: #6d7a6d;
-  --white: #ffffff;
-  --border-color: #e0e0e0;
+  /* Palette Morandi - Strict GEMINI.md Compliance */
+  --color-primary: #B5C0D0; /* 霧藍 / 藍雪花 */
+  --color-bg: #F5E8DD;      /* 亞麻白 / 米色 */
+  --color-text: #4A4A4A;    /* 柔和炭灰 */
+  --color-white: #FFFFFF;
+  --color-border: rgba(74, 74, 74, 0.1);
   
   --font-serif: 'Playfair Display', serif;
   --font-sans: 'Inter', sans-serif;
   
-  --spacing-lg: 4rem;
-  --spacing-md: 2rem;
-  --spacing-sm: 1rem;
+  --spacing-lg: 5rem;
+  --spacing-md: 2.5rem;
+  --spacing-sm: 1.25rem;
 }
 
 * {
@@ -27,8 +24,8 @@
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--bg-color);
-  color: var(--text-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -36,27 +33,23 @@ body {
 h1, h2, h3 {
   font-family: var(--font-serif);
   font-weight: 700;
-  color: var(--text-main);
+  color: var(--color-text);
 }
 
 a {
   text-decoration: none;
   color: inherit;
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  opacity: 0.7;
+  color: var(--color-primary);
 }
 
 .section {
   padding: var(--spacing-lg) var(--spacing-md);
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.container {
-  width: 100%;
 }
 
 /* Navigation Styles */
@@ -66,10 +59,10 @@ a:hover {
   left: 0;
   width: 100%;
   padding: 1.5rem var(--spacing-md);
-  background-color: rgba(247, 249, 247, 0.8);
-  backdrop-filter: blur(10px);
+  background-color: rgba(245, 232, 221, 0.85); /* Use --color-bg with opacity */
+  backdrop-filter: blur(12px);
   z-index: 100;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .nav-container {
@@ -82,10 +75,10 @@ a:hover {
 
 .logo {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  letter-spacing: 2px;
-  color: var(--accent-deep);
+  letter-spacing: 1px;
+  color: var(--color-text);
 }
 
 .nav-links {
@@ -94,25 +87,34 @@ a:hover {
 }
 
 .nav-links a {
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.85rem;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--text-muted);
+  letter-spacing: 1.5px;
+  color: var(--color-text);
+  opacity: 0.8;
 }
 
 .nav-links a:hover {
-  color: var(--accent-deep);
+  opacity: 1;
+  color: var(--color-primary);
 }
 
 /* Footer Styles */
 .footer {
   padding: var(--spacing-md);
   text-align: center;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--color-border);
   margin-top: var(--spacing-lg);
-  color: var(--text-muted);
-  font-size: 0.9rem;
+  color: var(--color-text);
+  opacity: 0.6;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {

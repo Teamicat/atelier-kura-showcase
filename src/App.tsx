@@ -25,7 +25,7 @@ function App() {
     <div className="app">
       <nav className="main-nav">
         <div className="nav-container">
-          <div className="logo">Atelier Kura</div>
+          <div className="logo">Yamasaki</div>
           <div className="nav-links">
             <a href="#home">Histoire</a>
             <a href="#gallery">Collection</a>
@@ -35,10 +35,10 @@ function App() {
         </div>
       </nav>
 
-      <main style={{ paddingTop: '80px' }}>
+      <main style={{ paddingTop: '100px' }}>
         <Hero />
         <Gallery onProductClick={openModal} />
-        <Reviews /> {/* Intégration du composant Avis Clients */}
+        <Reviews />
         <Contact />
         <Social />
       </main>
