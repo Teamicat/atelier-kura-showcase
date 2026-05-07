@@ -5,7 +5,7 @@ import Modal from './components/Modal/Modal';
 import Contact from './components/Contact/Contact';
 import Social from './components/Social/Social';
 import Reviews from './components/Reviews/Reviews'; /* Importer le nouveau composant */
-import { Product } from './data';
+import type { Product } from './data';
 import './index.css';
 
 function App() {

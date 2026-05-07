@@ -15,26 +15,11 @@ const renderStars = (rating: number) => {
 
 const Reviews = () => {
   // Données simulées pour atteindre une moyenne de 4.9
-  const reviews = [
-    { id: 1, name: "Alice Dubois", rating: 5.0, comment: "Magnifique travail artisanal, chaque pièce est unique et apporte une touche de sérénité à ma cuisine." },
-    { id: 2, name: "Bernard Petit", rating: 4.5, comment: "Très belle sélection d'ustensiles. Le service client est réactif et efficace." },
-    { id: 3, name: "Chloé Martin", rating: 5.0, comment: "L'esthétique japonaise rencontre le design français. Parfait !" },
-    { id: 4, name: "David Moreau", rating: 5.0, comment: "La qualité des matériaux est exceptionnelle. Je suis ravi de mes achats chez Atelier Kura." },
-    { id: 5, name: "Émilie Lefevre", rating: 4.5, comment: "Produits superbes, conformes à la description. La livraison a été un peu longue mais le résultat en valait l'attente." },
-  ];
-
-  // Calcul de la moyenne pour vérification (devrait être 4.9)
-  // (5.0 + 4.5 + 5.0 + 5.0 + 4.5) / 5 = 24.0 / 5 = 4.8
-  // Pour obtenir exactement 4.9, ajustons légèrement ou ajoutons un avis.
-  // On peut avoir 4 avis à 5.0 et 1 avis à 4.5 (24.5/5 = 4.9)
-  // Les avis actuels donnent 4.8. Ajustons :
-  // { id: 5, name: "Émilie Lefevre", rating: 4.9, comment: "..." } ? Non, trop précis.
-  // Modifions les avis pour arriver à 4.9
   const adjustedReviews = [
     { id: 1, name: "Alice Dubois", rating: 5.0, comment: "Magnifique travail artisanal, chaque pièce est unique et apporte une touche de sérénité à ma cuisine." },
     { id: 2, name: "Bernard Petit", rating: 4.8, comment: "Très belle sélection d'ustensiles. Le service client est réactif et efficace." },
     { id: 3, name: "Chloé Martin", rating: 5.0, comment: "L'esthétique japonaise rencontre le design français. Parfait !" },
-    { id: 4, name: "David Moreau", rating: 5.0, comment: "La qualité des matériaux est exceptionnelle. Je suis ravi de mes achats chez Atelier Kura." },
+    { id: 4, name: "David Moreau", rating: 5.0, comment: "La qualité des matériaux est exceptionnelle. Je suis ravi de mes achats chez Yamasaki." },
     { id: 5, name: "Émilie Lefevre", rating: 4.7, comment: "Produits superbes, conformes à la description. La livraison a été un peu longue mais le résultat en valait l'attente." },
   ];
   // Calcul: (5.0 + 4.8 + 5.0 + 5.0 + 4.7) / 5 = 24.5 / 5 = 4.9
