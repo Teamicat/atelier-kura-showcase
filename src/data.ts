@@ -8,7 +8,7 @@ export const products: Product[] = [
     name: "Couteau Santoku",
     description: "La précision japonaise à portée de main.",
     price: "120€",
-    image: "https://images.unsplash.com/photo-1566454419290-57a64afe30ac?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?auto=format&fit=crop&w=800&q=80",
     details: "Forgé en acier inoxydable japonais, ce couteau polyvalent excelle dans la découpe des légumes, viandes et poissons."
   },
   {
@@ -24,7 +24,7 @@ export const products: Product[] = [
     name: "Planche en Hinoki",
     description: "Le bois sacré de la cuisine japonaise.",
     price: "55€",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1544233726-9f1d2b27be8b?auto=format&fit=crop&w=800&q=80",
     details: "Planche à découper en cyprès hinoki, naturellement antibactérienne et douce pour les lames."
   },
   {
@@ -32,7 +32,7 @@ export const products: Product[] = [
     name: "Bol en Céramique",
     description: "Élégance minimaliste pour chaque repas.",
     price: "35€",
-    image: "https://images.unsplash.com/photo-1519984388953-d2406bc725e1?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?auto=format&fit=crop&w=800&q=80",
     details: "Bol artisanal en céramique émaillée, fabriqué à la main dans un atelier de Kyoto."
   },
   {
