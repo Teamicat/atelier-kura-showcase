@@ -16,7 +16,7 @@ export const products: Product[] = [
     name: "Théière Tetsubin",
     description: "L'art du thé dans toute sa splendeur.",
     price: "85€",
-    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
     details: "Théière en fonte traditionnelle, conserve la chaleur longtemps et enrichit le goût du thé."
   },
   {
@@ -24,8 +24,8 @@ export const products: Product[] = [
     name: "Planche en Hinoki",
     description: "Le bois sacré de la cuisine japonaise.",
     price: "55€",
-    image: "https://images.unsplash.com/photo-1544233726-9f1d2b27be8b?auto=format&fit=crop&w=800&q=80",
-    details: "Planche à découper en cyprès hinoki, naturellement antibactérienne et douce pour les lames."
+    image: "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?auto=format&fit=crop&w=800&q=80",
+    details: "Planche à découper en cyprès hinoki, naturally antibactérienne et douce pour les lames."
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ export const products: Product[] = [
     name: "Casserole en Fonte",
     description: "La cuisson lente pour des saveurs profondes.",
     price: "180€",
-    image: "https://images.unsplash.com/photo-1585515320310-259814833e62?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80",
     details: "Casserole en fonte émaillée, idéale pour les mijotés et les soupes japonaises comme le ramen."
   }
 ];
