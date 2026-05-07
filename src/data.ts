@@ -1,51 +1,46 @@
-export interface Product {
-  id: number;
-  name: string;
-  description: string;
-  price: string;
-  image: string;
-  details: string;
-}
+import type { Product } from './types';
+
+export type { Product };
 
 export const products: Product[] = [
   {
     id: 1,
     name: "Couteau Santoku",
-    description: "L'équilibre parfait pour la découpe quotidienne.",
+    description: "La précision japonaise à portée de main.",
     price: "120€",
-    image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=800",
-    details: "Un couteau polyvalent japonais dont le nom signifie 'trois vertus'. Idéal pour trancher, couper en dés et hacher avec une précision chirurgicale. Forgé dans un acier de haute qualité pour un tranchant durable."
+    image: "https://images.unsplash.com/photo-1566454419290-57a64afe30ac?auto=format&fit=crop&w=800&q=80",
+    details: "Forgé en acier inoxydable japonais, ce couteau polyvalent excelle dans la découpe des légumes, viandes et poissons."
   },
   {
     id: 2,
     name: "Théière Tetsubin",
-    description: "L'art du thé dans la pure tradition japonaise.",
+    description: "L'art du thé dans toute sa splendeur.",
     price: "85€",
-    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800",
-    details: "Cette théière en fonte émaillée conserve la chaleur de manière exceptionnelle. Son motif traditionnel et sa patine artisanale en font une pièce maîtresse pour vos moments de sérénité."
+    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80",
+    details: "Théière en fonte traditionnelle, conserve la chaleur longtemps et enrichit le goût du thé."
   },
   {
     id: 3,
     name: "Planche en Hinoki",
-    description: "Le bois sacré du Japon pour vos lames.",
+    description: "Le bois sacré de la cuisine japonaise.",
     price: "55€",
-    image: "https://images.unsplash.com/photo-1544233726-9f1d2b27be8b?w=800",
-    details: "Fabriquée en cyprès japonais (Hinoki), cette planche est naturellement antibactérienne. Sa texture souple protège le fil de vos couteaux les plus précieux tout en diffusant un léger parfum boisé."
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+    details: "Planche à découper en cyprès hinoki, naturellement antibactérienne et douce pour les lames."
   },
   {
     id: 4,
     name: "Bol en Céramique",
-    description: "La beauté de l'imperfection artisanale.",
+    description: "Élégance minimaliste pour chaque repas.",
     price: "35€",
-    image: "https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?w=800",
-    details: "Un bol en céramique tourné à la main, arborant un émail irrégulier qui célèbre l'esthétique Wabi-sabi. Chaque pièce est unique, invitant à la contemplation lors de chaque repas."
+    image: "https://images.unsplash.com/photo-1519984388953-d2406bc725e1?auto=format&fit=crop&w=800&q=80",
+    details: "Bol artisanal en céramique émaillée, fabriqué à la main dans un atelier de Kyoto."
   },
   {
     id: 5,
     name: "Casserole en Fonte",
-    description: "Une cuisson saine et authentique.",
+    description: "La cuisson lente pour des saveurs profondes.",
     price: "180€",
-    image: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=800",
-    details: "Une casserole en fonte robuste pour une diffusion de chaleur homogène. Parfaite pour les mijotés et les cuissons traditionnelles, alliant durabilité et design minimaliste."
+    image: "https://images.unsplash.com/photo-1585515320310-259814833e62?auto=format&fit=crop&w=800&q=80",
+    details: "Casserole en fonte émaillée, idéale pour les mijotés et les soupes japonaises comme le ramen."
   }
 ];
