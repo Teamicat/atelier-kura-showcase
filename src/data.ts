@@ -29,7 +29,7 @@ export const products: Product[] = [
     name: "Planche à Découper en Bois",
     description: "Un billot naturel et résistant.",
     price: "45€",
-    image: "https://images.unsplash.com/photo-1594794112450-b50a2569ef5c?auto=format&fit=crop&q=80&w=800",
+    image: "/images/Planche.png",
     details: "Une planche épaisse en bois de chêne, traitée aux huiles naturelles. Sa surface auto-cicatrisante protège le tranchant de vos couteaux."
   },
   {
