@@ -1,8 +1,7 @@
 .contact {
-  background-color: var(--white);
+  background-color: var(--color-bg); /* 對齊亞麻白 */
   padding: var(--spacing-lg) var(--spacing-md);
   margin-top: var(--spacing-lg);
-  border-radius: 24px 24px 0 0;
 }
 
 .contact-container {
@@ -12,12 +11,14 @@
 }
 
 .contact-title {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
 }
 
 .contact-intro {
-  color: var(--text-muted);
+  color: var(--color-text);
+  opacity: 0.8;
   margin-bottom: 3rem;
 }
 
@@ -31,24 +32,35 @@
 .form-group textarea {
   width: 100%;
   padding: 1.2rem;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  background-color: var(--bg-color);
+  border: 1.5px solid var(--color-primary); /* 加上明顯的霧藍邊框 */
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5); /* 半透明白增加呼吸感 */
   font-family: var(--font-sans);
   font-size: 1rem;
-  transition: border-color 0.3s ease;
+  color: var(--color-text);
+  transition: all 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--accent-soft);
+  background-color: var(--color-white);
+  border-color: var(--color-text); /* 聚焦時加深 */
+}
+
+/* 針對此表單的按鈕特別優化 */
+.contact-form .btn-primary {
+  border: none !important;      /* 絕對不要外框 */
+  outline: none !important;     /* 絕對不要點擊外框 */
+  cursor: pointer;
+  margin-top: 1rem;
+  align-self: center;
 }
 
 .status-message {
   margin-top: 1.5rem;
-  color: var(--accent-deep);
-  font-weight: 600;
+  color: var(--color-primary);
+  font-weight: 500;
   animation: fadeIn 0.5s ease;
 }
 
