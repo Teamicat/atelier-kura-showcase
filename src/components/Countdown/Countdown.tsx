@@ -2,48 +2,39 @@ import { useState, useEffect } from 'react';
 import './Countdown.css';
 
 const Countdown = () => {
-  // 設定目標時間：現在加上 5 天 3 小時
-  const [timeLeft, setTimeLeft] = useState({
-    days: 5,
-    hours: 3,
-    minutes: 0,
-    seconds: 0
+  // 設定目標時間：從現在起 5 天又 3 小時
+  const [targetDate] = useState(() => {
+    const date = new Date();
+    date.setDate(date.getDate() + 5);
+    date.setHours(date.getHours() + 3);
+    return date.getTime();
   });
 
+  const calculateTimeLeft = () => {
+    const now = new Date().getTime();
+    const difference = targetDate - now;
+
+    if (difference <= 0) {
+      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    }
+
+    return {
+      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+      minutes: Math.floor((difference / (1000 * 60)) % 60),
+      seconds: Math.floor((difference / 1000) % 60)
+    };
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
   useEffect(() => {
-    // 這裡我們簡化處理，直接從固定值開始每秒遞減
-    // 在實際應用中通常會計算與目標 Date 的差值
     const timer = setInterval(() => {
-      setTimeLeft(prev => {
-        let { days, hours, minutes, seconds } = prev;
-        
-        if (seconds > 0) {
-          seconds--;
-        } else {
-          seconds = 59;
-          if (minutes > 0) {
-            minutes--;
-          } else {
-            minutes = 59;
-            if (hours > 0) {
-              hours--;
-            } else {
-              hours = 23;
-              if (days > 0) {
-                days--;
-              } else {
-                clearInterval(timer);
-                return prev;
-              }
-            }
-          }
-        }
-        return { days, hours, minutes, seconds };
-      });
+      setTimeLeft(calculateTimeLeft());
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [targetDate]);
 
   return (
     <div className="countdown-banner">

@@ -46,7 +46,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <p>&copy; 2026 Atelier Kura. Tous droits réservés.</p>
+        <p>&copy; 2026 Yamasaki. Tous droits réservés.</p>
       </footer>
 
       <Modal product={selectedProduct} onClose={closeModal} />
